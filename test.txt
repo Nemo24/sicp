@@ -1,0 +1,98 @@
+Source file ‘/Users/manoharm/.emacs.d/elpa/use-package-20171013.1548/use-package.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/which-key-20170817.1107/which-key.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/swiper-20171105.42/swiper.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/ivy-20171104.252/ivy.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/ivy-20171104.252/ivy-overlay.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete-config.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/projectile-20171102.55/projectile.el’ newer than byte-compiled file
+Source file ‘/Users/manoharm/.emacs.d/elpa/dash-20171010.131/dash.el’ newer than byte-compiled file
+Loading a theme can run Lisp code.  Really load? (y or n) y
+Treat this theme as safe in future sessions? (y or n) y
+Saving file /Users/manoharm/.emacs.d/init.el...
+Wrote /Users/manoharm/.emacs.d/init.el [2 times]
+For information about GNU Emacs and the GNU system, type C-h C-a.
+ls does not support --dired; see ‘dired-use-ls-dired’ for more details.
+Source file ‘/Users/manoharm/.emacs.d/elpa/counsel-projectile-20171105.1200/counsel-projectile.el’ newer than byte-compiled file
+Quit [2 times]
+(New file)
+Quit
+Auto-saving...done
+Mark set [2 times]
+Loading /Users/manoharm/.emacs.d/recentf...done
+Cleaning up the recentf list...done (0 removed)
+Quit [3 times]
+C-h ESC ESC is undefined
+Quit
+C-M-g is undefined
+Quit
+Mark set
+user-error: Register does not contain text
+Composing main Info directory...done
+Found ‘third menu item’ in Index.  (Only match)
+Quit [2 times]
+bookmark-buffer-file-name: Buffer not visiting a file or directory
+C-x r 1 is undefined [2 times]
+user-error: Register doesn’t contain a buffer position or configuration [2 times]
+Auto-saving...done
+Type "q" in help window to delete it
+x is undefined
+Quit
+enable-theme is not on any key
+load-theme is not on any key
+counsel-find-file-extern is not on any key
+counsel-find-file is not on any key
+switch-to-buffer is remapped to ivy-switch-buffer which is on C-x b, <menu-bar> <buffer> <select-named-buffer>
+Quit
+Type "q" in help window to delete it.
+Invoking man 1 sort in the background
+1 sort man page formatted
+Auto-saving...done
+Setting up indent for shell type bash
+Indentation variables are now local.
+Indentation setup for shell type bash
+Setting up indent for shell type bash
+Indentation variables are now local.
+Indentation setup for shell type bash
+s-[ is undefined
+previous-buffer is on <XF86Back>, C-x <C-left>, C-x <left>, <menu-bar> <buffer> <previous-buffer>
+Quit [3 times]
+(New file)
+Auto-saving...done
+next-line: End of buffer
+Saving file /Users/manoharm/mm-personal/alok.txt...
+Wrote /Users/manoharm/mm-personal/alok.txt
+previous-line: Beginning of buffer [6 times]
+Mark set [2 times]
+mwheel-scroll: Beginning of buffer [9 times]
+user-error: Marker stack is empty [2 times]
+Mark set
+Quit
+The Scheme process has died.  Reset it? (y or n) y
+Resetting Scheme process...
+xscheme-parse-command-line: Wrong type argument: stringp, nil
+Auto-saving...done
+QuitError during redisplay: (eval (flymake--mode-line-format)) signaled (wrong-type-argument hash-table-p nil)
+Error during redisplay: (eval (flymake--mode-line-format)) signaled (wrong-type-argument hash-table-p nil)
+Updating buffer list...
+Formats have changed, recompiling...done
+Updating buffer list...done
+Commands: m, u, t, RET, g, k, S, D, Q; q to quit; h for help
+[ is undefined
+Updating buffer list...done
+Commands: m, u, t, RET, g, k, S, D, Q; q to quit; h for help
+Updating buffer list...done
+command-execute: Buffer is read-only: #<buffer *Ibuffer*>
+Really kill 10 buffers? (y or n) y
+Buffer .bash_profile modified; kill anyway? (y or n) y
+Buffer dd modified; kill anyway? (y or n) y
+Operation finished; killed 10 buffers
+Updating buffer list...done
+Commands: m, u, t, RET, g, k, S, D, Q; q to quit; h for help
+Really kill 4 buffers? (y or n) n
+<s-escape> is undefined
+Saving file /Users/manoharm/mm-personal/learning/sicp/Chap1/sqrt_newtons_method.scm...
+Wrote /Users/manoharm/mm-personal/learning/sicp/Chap1/sqrt_newtons_method.scm
+Wrote /Users/manoharm/mm-personal/learning/sicp/test.txt
+File ‘/Users/manoharm/mm-personal/learning/sicp/test.txt’ exists; overwrite? (y or n) y
+A buffer is visiting /Users/manoharm/mm-personal/learning/sicp/test.txt; proceed? (y or n) y

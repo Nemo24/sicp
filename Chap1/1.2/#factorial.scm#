@@ -1,9 +1,0 @@
-(define (factorial n)
-  (if (= n 1)
-      n
-      (* n (factorial (- n 1)))))
-
-(define (fact
-
-(factorial 4)
-(debug)

@@ -15,10 +15,18 @@
 (define (fact-iter n current_n current_accum)
   (if (= n current_n)
     current_accum
-    (fact-iter ( - n 1) current_n (* n current_accum)
+    (fact-iter n current_n (* n current_accum)
     )
   )
 )
 (fact-iter n 1 1)
 )
       
+; we could have written above like this
+; to avoid having n as an additional parameter in the inner proc
+(define (factorial_iter2 n)
+(define (iter product counter)
+(if (> counter n) product
+        (iter (* counter product)
+              (+ counter 1))))
+(iter 1 1))
