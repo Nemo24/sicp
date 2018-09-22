@@ -34,18 +34,6 @@
     (* ( /  h  3 ) (sum term 0 inc n)))
 
 
-(define (simpson-bill f a b n )
-    (define  h  ( / ( - b a ) n))
-    (define (inc x) ( + x 1))
-    (define (term k)
-      (* (cond ((odd? k) 4)
-            ((or (= k 0) (= k n)) 1)
-            ((even? k) 2))
-	 (y k)))
-    (define (y k ) 
-      ( f ( + a (* k h))))
-    (* ( /  h  3 ) (sum term 0 inc n)))
-
 
 (define (simpson-billreal f a b n)
   (define h (/ (- b a) n))
