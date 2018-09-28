@@ -1,12 +1,9 @@
 (define sq (lambda (x) (* x x)))
 
 (define p1
- (lambda (x y)
-	 ( + (p2 x y )
-	     (p3 x y )
-	     )
-	 )
- )
+  (lambda (x y)
+    ( + (p2 x y )
+     (p3 x y ))))
 (define p2
   (lambda (z w)
     (* z w)))
