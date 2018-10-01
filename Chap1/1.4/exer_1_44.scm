@@ -14,3 +14,12 @@
                   (f (- x dx)) 
                   (f x)
                   (f ( + x dx))))))
+
+(define (n-smooth f n)
+  (repeated smooth n))
+
+(define pi 3.1428)
+ 
+(sin (/ pi 2))
+
+(n-smooth )
