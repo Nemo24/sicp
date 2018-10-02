@@ -9,3 +9,74 @@
 ;should return as its value a procedure that takes a guess as argument and keeps 
 ;improving the guess until it is good enough. Rewrite the sqrt procedure of section 
 ;1.1.7 and the fixed-point procedure of section 1.3.3 in terms of iterative-improve.
+
+(define (iterative-improve good-enuf? improve-guess)
+  (define ( try guess) 
+    (if (good-enuf? guess)
+         guess
+        (try (improve-guess guess))))
+  try)
+
+
+;; below is what we have in section 1.17 for sqrt
+;(define (sqrt-iter guess x) (if (good-enough? guess x)
+;      guess
+;      (sqrt-iter (improve guess x) x)))
+;(define (improve guess x) (average guess (/ x guess)))
+;where
+;(define (average x y) (/ (+ x y) 2))
+;We also have to say what we mean by “good enough.” 
+;(define (good-enough? guess x)
+;(< (abs (- (square guess) x)) 0.001))
+;
+; 
+;Finally, we need a way to get started. 
+;(define (sqrt x) (sqrt-iter 1.0 x))
+
+;; lets try to define what good-enuf is in the iterative-improve method first
+;;good-enuf is a procedure which takes guess as an argument 
+;; and says whether it is good enuf
+
+
+(define ( sqrt-it-improved x) 
+  (define guess 1.0)
+  (define (good-enuf? guess)
+    (< (abs (- (square guess) x)) 0.001))
+  (define (improve-guess guess)
+    (define (average a b) ( / ( + a b) 2))
+    (average guess (/ x guess))) 
+  ((iterative-improve good-enuf?    improve-guess ) guess))
+ 
+ 
+ 
+ 
+;fixed-point definition was 
+;(define (fixed-point f first-guess)
+; (define (close-enough? v1 v2) 
+;   (< (abs (- v1 v2)) tolerance)) 
+; (define (try guess)
+;   (let ((next (f guess)))
+;     (if (close-enough? guess next)
+;         next
+;         (try next))))
+; (try first-guess))
+
+
+;method for testing fixed point was 
+;define (sqrt x)
+; (define (average a b) (/ ( + a b) 2.0))
+; (fixed-point 
+;   (lambda (y) (average ( / x y) y)) 1.0 ))
+
+
+(define (fixed-point f first-guess)
+  (define (close-enough? guess)
+    (< (abs (- guess (f guess))) 0.0001))
+  (define (improve-guess guess)
+    (f guess))
+  ((iterative-improve close-enough? improve-guess) first-guess))
+
+(define (sqrt-fp x)
+ (define (average a b) (/ ( + a b) 2.0))
+ (fixed-point 
+   (lambda (y) (average ( / x y) y)) 1.0 ))
