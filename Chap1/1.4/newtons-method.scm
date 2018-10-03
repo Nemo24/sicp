@@ -25,10 +25,14 @@
 
 (define (newton-transform f)
  (define transform (lambda (x) (- x (/ (f x) ((deriv f) x)))))
- (average-damp transform) )
+  transform )
 
 (define (newton f guess)
   (fixed-point (newton-transform f) guess))
 
 (define (sqrt x)
-  (newton (lambda (y) (- x (* y y))) 1.0))
+  (newton  (lambda (y) (- x (* y y))) 1.0))
+
+
+(define (sqrt-damped x)
+  (newton  (average-damp (lambda (y) (- x (* y y)))) 1.0))

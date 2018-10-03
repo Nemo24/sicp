@@ -98,3 +98,13 @@
 ;1 ]=> (nth-root (expt 2 30) 30 4)
 
 ;Value: 2.0000044907654058
+
+
+;based on above experiments looks like we need dampingfreq to be a logartithm function of
+;n where nth-root for n is calculated . we can redefined nth-root as 
+
+
+(define (nth-root-redefined x n )
+  (define dampingfreq (floor (/ (log n ) (log 2))))
+  (fixed-point ((repeated average-damp dampingfreq) (lambda (y) (/ x ( expt y (- n 1)))))
+               1.0))

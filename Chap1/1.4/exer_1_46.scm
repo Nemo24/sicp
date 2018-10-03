@@ -47,8 +47,25 @@
     (average guess (/ x guess))) 
   ((iterative-improve good-enuf?    improve-guess ) guess))
  
+ ; if i want good-enuf? to be outside of the sqrt-it function , then 
+ ;i need a procedure which accepts x as input and returns a procedure which accept the guess as input
+ 
+ (define (good-enuf? x)
+    (lambda (guess) (< (abs (- (square guess) x)) 0.001))) 
+ 
+ ;similarly improve guess also shud be this way
+ (define (improve-guess x)
+    (define (average a b) ( / ( + a b) 2))
+    (lambda (guess) (average guess (/ x guess)))) 
  
  
+ ; have to apply good-enuf and improve-guess 
+ ;with x { (good-enuf? x) (improve-guess x) in velow procedure}
+ ; to get the actual procedure
+ ; but this is confusing and sqrt-it-improved is much more clean 
+ (define ( sqrt-it-improved2 x) 
+  (define guess 1.0)
+  ((iterative-improve (good-enuf? x)    (improve-guess x) ) guess)) 
  
 ;fixed-point definition was 
 ;(define (fixed-point f first-guess)
